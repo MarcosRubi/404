@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    padding: 20px;
+}
+h1, h2, p{
+    text-align: center;
+    font-size: 3em;
+
+}
+h2{
+    color:rgb(131, 213, 245);
+    font-size: 6em;
+}
+p{
+    font-size: 1.2em;
+    margin: 10px 0 30px 0;
+}
+input[type="text"]{
+    width: 80%;
+    height: 40px;
+    padding-left: 15px;
+    background: transparent;
+    color:#fff;
+    outline:none;
+}
+input[type="submit"]{
+    width: 30%;
+    height: 40px;
+    background: rgb(131, 213, 245);
+    color:rgb(24, 22, 22);
+    border:none;
+    cursor:pointer;
+    font-size: .5em;
+    font-weight: bold;
+    outline:none;
+    transition: all .3s;
+    margin-left: -3px;
+}
+.info, .search{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+button[type="submit"]{
+    width: 45%;
+    height: 40px;
+    border: 1px solid rgb(131, 213, 245);
+    background: transparent;
+    color:#fff;
+    cursor:pointer;
+
+}
+input[type="submit"]:hover , button[type="submit"]:hover{
+    background: rgb(83, 160, 190);
+    color:#FFF;
+
+}
+
+@media (min-width:540px){
+    body{
+        font-size: 1.2em;
+    }
+    .search, .info{
+        margin: auto;
+        width: 80%;
+    }
+    button[type="submit"]{
+        margin: 40px 0 0 0;
+    }
+    input[type="text"], input[type="submit"], button[type="submit"] {
+        height: 50px;
+    }
+}
+@media(min-width:1024px){
+    .search{
+        width: 50%;
+    }
+}
